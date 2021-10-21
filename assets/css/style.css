@@ -73,22 +73,45 @@ header nav ul li a {
     max-height: 675px;
 }
 
-.aboutMe1 {
-    width: 100%;
-    margin: 0 auto;
+
+ .titles {
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    color: var(--primary-color);
+    border-right: 5px solid var(--primary-color);
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ /* connect section styling */
+
+.connect { 
     display: flex;
     flex-wrap: wrap;
+    padding: 15px;
     justify-content: space-around;
- }
- 
- .aboutMe {
-     margin: 20px;
-     background: var(--secondary-color);
-     color: var(--primary-color);
-     flex: 1;
- }
- 
- .aboutMe img {
+    width: 75%;
+    font-size: 20px;
+    background-color:var(--secondary-color);
+}
+
+.connecting {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-evenly;
+    font-size: 20px;
+    width: 75%;
+}
+
+.connecting a {
+    color: black;
+    text-decoration: none;
+}
+
+.connecting img {
     max-width: 450px;
     max-height: 500px;
  }
