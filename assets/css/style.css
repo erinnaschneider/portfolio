@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #ccb3ff;
+    --secondary-color: #666666;
+    --tertiary-color: #39a6b2;
+  }
+
 header{
     padding: 20px 35px;
     background-color: var(--tertiary-color);
@@ -27,6 +33,30 @@ header h1 {
     color: var(--primary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--secondary-color);
 }
 
 header a {
