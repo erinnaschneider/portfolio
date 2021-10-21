@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
 }
 
 :root {
@@ -32,31 +34,8 @@ header h1 {
     font-size: 36px;
     color: var(--primary-color);
     margin: 0;
+    flex: auto;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-footer {
-    background: var(--primary-color);
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: var(--secondary-color);
 }
 
 header a {
@@ -82,3 +61,49 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+
+
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+.aboutMe1 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ 
+ .aboutMe {
+     margin: 20px;
+     background: var(--secondary-color);
+     color: var(--primary-color);
+     flex: 1;
+ }
+ 
+ .aboutMe img {
+    max-width: 450px;
+    max-height: 500px;
+ }
