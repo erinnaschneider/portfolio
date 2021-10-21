@@ -11,7 +11,7 @@
     --secondary-color: #666666;
     --tertiary-color: #39a6b2;
   }
-
+/* Styling of the header */
 header{
     padding: 20px 35px;
     background-color: var(--tertiary-color);
@@ -62,30 +62,15 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
-
-footer {
-    background: var(--primary-color);
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: var(--secondary-color);
+/* Styling of the Jumbotron */
+.background {
+    position: absolute;
+    background-color: var(--color1);
+    display: block;
+    top: 0;  
+    left: 0;
+    z-index: 1;
+    max-height: 675px;
 }
 
 .aboutMe1 {
