@@ -7,8 +7,8 @@
 }
 
 :root {
-    --primary-color: #ccb3ff;
-    --secondary-color: #666666;
+    --primary-color: #412872;
+    --secondary-color: #f7f3f3;
     --tertiary-color: #39a6b2;
   }
 /* Styling of the header */
@@ -45,7 +45,7 @@ header nav {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     float: left;
@@ -61,8 +61,9 @@ header nav ul li a {
 
 /* Styling of the Jumbotron */
 .background {
-    position: absolute;
-    background-color: none;
+    position: static;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
     display: block;
     top: 0;  
     left: 0;
@@ -70,11 +71,12 @@ header nav ul li a {
     max-height: 675px;
 }
 
+/* styling of three main sections */
 
  .titles {
     font-size: 40px;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 0px;
     color: var(--primary-color);
     border-right: 5px solid var(--primary-color);
     width: 25%;
@@ -82,12 +84,21 @@ header nav ul li a {
     justify-content: flex-end;
 }
 
+.float-container {
+    padding: 10px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
  /* connect section styling */
 
 .connect { 
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 5px;
     justify-content: space-around;
     width: 100%;
     font-size: 20px;
@@ -104,11 +115,13 @@ header nav ul li a {
 }
 
 .connecting a {
-    color: black;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 .connecting img {
     max-width: 450px;
     max-height: 500px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
  }
