@@ -140,7 +140,38 @@ header nav ul li a {
     
 
     @media screen and (max-width: 768px) {
-        
+        .titles {
+            font-size: 30px;
+            width: 43%;
+            padding: 10px;
+            margin: 10px 0;
+            border-bottom: 5px solid var(--primary-color);
+            border-right: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .connect a {
+            padding: 10px;
+        }
+
+        .connecting {
+            width: unset;
+            text-align: center;
+            float: inline-start;
+        }
+
+        .connecting img {
+            max-width: 500px;
+        }
+
+        .float-child {
+            width: 100%;
+            margin: 20px;
+            
+        }
     }
 
     @media screen and (max-width: 575px) {
