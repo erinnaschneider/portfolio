@@ -92,6 +92,7 @@ header nav ul li a {
     width: 50%;
     float: left;
     padding: 10px;
+    color: var(--primary-color);
 }
  /* connect section styling */
 
@@ -125,3 +126,50 @@ header nav ul li a {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
  }
+
+
+
+
+
+
+ /* Screen size responsiveness */
+
+@media screen and (min-width: 980px) {
+
+}
+    
+
+    @media screen and (max-width: 768px) {
+        
+    }
+
+    @media screen and (max-width: 575px) {
+        .titles {
+            font-size: 30px;
+            width: 43%;
+            padding: 10px;
+            margin: 10px 0;
+            border-bottom: 5px solid var(--primary-color);
+            border-right: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .connecting {
+            width: unset;
+            text-align: center;
+        }
+
+        .connecting img {
+            max-width: 250px;
+        }
+
+        .float-child {
+            width: 50%;
+            margin: 20px;
+            
+        }
+
+    }
