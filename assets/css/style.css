@@ -127,15 +127,36 @@ header nav ul li a {
     border-radius: 5px;
  }
 
+.project {
+    display:flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding: 20px;
+}
 
 
+.project-img {
+    width: 50%;
+    opacity: .7 ;
+    transition: ease-in;
+    max-height: 30vw;
+}
+
+.project-img:hover {
+    opacity: 1;
+    transition-duration: .2s;
+}
+
+.big {
+    width: 100%;
+}
 
 
 
  /* Screen size responsiveness */
 
 @media screen and (min-width: 980px) {
-    
+
 }
     
 
@@ -157,10 +178,10 @@ header nav ul li a {
             padding: 10px;
         }
 
-        .connecting {
+        .connecting, .project {
             width: unset;
             text-align: center;
-            float: inline-start;
+            float: center;
         }
 
         .connecting img {
@@ -168,7 +189,7 @@ header nav ul li a {
         }
 
         .float-child {
-            width: 100%;
+            width: 90%;
             margin: 20px;
             
         }
@@ -191,6 +212,7 @@ header nav ul li a {
         .connecting {
             width: unset;
             text-align: center;
+            float: center;
         }
 
         .connecting img {
@@ -198,9 +220,7 @@ header nav ul li a {
         }
 
         .float-child {
-            width: 50%;
+            width: 80%;
             margin: 20px;
-            
         }
-
     }
