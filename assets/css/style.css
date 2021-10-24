@@ -85,7 +85,10 @@ header nav ul li a {
 }
 
 .float-container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px;
+    width: 100%;
 }
 
 .float-child {
@@ -136,10 +139,11 @@ header nav ul li a {
 
 
 .project-img {
-    width: 50%;
+    width: 100%;
     opacity: .7 ;
     transition: ease-in;
-    max-height: 30vw;
+    max-height: 200px;
+    max-width: 302px;   
 }
 
 .project-img:hover {
@@ -149,7 +153,20 @@ header nav ul li a {
 
 .big {
     width: 100%;
+    max-width: 1000px;
+    max-height: 500px;
 }
+
+.row1 img {
+    display: block;
+    max-width: 100%;
+}
+
+.row2 img {
+    display: block;
+    max-width: 100%;
+}
+
 
 
 
@@ -185,7 +202,7 @@ header nav ul li a {
         }
 
         .connecting img {
-            max-width: 500px;
+            max-width: 300px;
         }
 
         .float-child {
